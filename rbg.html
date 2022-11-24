@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="rbg.css">
+    <title>RGB</title>
+</head>
+<body>
+  <div class="container">
+    <div class="color_box"></div>
+
+    <div class="rendom">
+
+        <div class="slider">R
+        <input type="range" min="0" max="255" value="0"
+        id="red" oninput="colorchange()">
+        </div>
+
+        <div class="slider">G
+            <input type="range" min="0" max="255" value="0"
+            id="green" oninput="colorchange()">
+        </div>
+
+        <div class="slider">B
+          <input type="range" min="0" max="255" value="0"
+                id="blue" oninput="colorchange()">
+        </div>
+
+    </div>
+    <span class="rgb"> RGB (0 , 0 , 0)</span>
+  </div>  
+  <div id="particles-js"></div>
+    <script src="./rbg.js"></script>
+    <script src="./particle.js"></script>
+    <script src="./app.js"></script>
+</body>
+</html>
